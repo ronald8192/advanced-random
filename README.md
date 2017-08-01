@@ -1,5 +1,7 @@
 # Advance Random
 
+[![Build Status](https://travis-ci.org/ronald8192/advanced-random.svg?branch=master)](https://travis-ci.org/ronald8192/advanced-random)
+
 ## Demo
 
 * Generate number sequence: `com.ronald8192.advancedRandom.demo.SequenceDemo`
