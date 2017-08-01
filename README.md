@@ -5,6 +5,8 @@
 * Generate number sequence: `com.ronald8192.advancedRandom.demo.SequenceDemo`
 * Generate number sequence, show it as bitmap image: `com.ronald8192.advancedRandom.demo.ImageDemo`
 
+  ![Image](https://user-images.githubusercontent.com/5982132/28838738-d886d218-7723-11e7-9903-0cd2694ba60b.png)
+
 ## Example
 * Generate random numbers by given ranges (Number possible range)
 
