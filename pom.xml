@@ -4,8 +4,20 @@
 
 	<groupId>com.ronald8192.advancedRandom</groupId>
 	<artifactId>advanced-random</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://svn.apache.org/viewvc/maven</url>
+    </scm>
 
 	<name>advanced-random</name>
 	<url>http://maven.apache.org</url>
@@ -13,11 +25,19 @@
 		<defaultGoal>install</defaultGoal>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.ronald8192.advancedRandom.App</mainClass>
+							<mainClass>com.ronald8192.advancedRandom.demo.SequenceDemo</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
