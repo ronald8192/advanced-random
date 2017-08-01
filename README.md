@@ -1,6 +1,6 @@
 # Advance Random
 
-##Demo
+## Demo
 
 * Generate number sequence: `com.ronald8192.advancedRandom.demo.SequenceDemo`
 * Generate number sequence, show it as bitmap image: `com.ronald8192.advancedRandom.demo.ImageDemo`
@@ -36,9 +36,9 @@
 * Each range can be set to occur at least `n` times.
    * => Generated sequence minimum length = sum of minimum occurrence of all ranges.
 
-         Range r2 = new Range(1, 5, 3);
-         Range r3 = new Range(11, 20, 5);
-         Range r4 = new Range(101, 200, 8);
+         Range r2 = new Range(1, 5, 3);     // occur at least 3 times.
+         Range r3 = new Range(11, 20, 5);   // occur at least 5 times.
+         Range r4 = new Range(101, 200, 8); // occur at least 8 times.
 
          seqGen.addRanges(r2, r3, r4);
          seqGen.generateList(7, true); //generate 3+5+8=16 numbers
@@ -66,6 +66,8 @@
          **/
 
    * Random by range, then possible number (`SequenceGenerator.Mode.RANDOM_BY_RANGE_THEN_NUMBER`)
+
+         // Each range have same occur probability
 
          seqGen.clearRanges()
              .setMode(SequenceGenerator.Mode.RANDOM_BY_RANGE_THEN_NUMBER)
